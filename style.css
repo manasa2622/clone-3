@@ -1,0 +1,124 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #141414;
+  color: #fff;
+}
+
+/* Navigation Bar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #141414;
+  padding: 20px;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo img {
+  width: 100px;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav .sign-in {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/7d1a8f3e-9d3b-4bff-bb1e-5f6e3b8e3d4b-7d1a8f3e-9d3b-4bff-bb1e-5f6e3b8e3d4b.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Movie Carousel */
+.movies {
+  padding: 50px 20px;
+}
+
+.movies h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.movie-row {
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+}
+
+.movie-row img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.movie-row img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #141414;
+  padding: 20px;
+  text-align: center;
+}
